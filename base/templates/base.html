@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> {% block title %}Mahfuj Ahmed{% endblock %}</title>
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    {% include 'base/header.html' %}
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <h4 id="scrollspyHeading1"></h4>
+        {% block homecontent %}
+            {% include 'base/home.html' %}
+        {% endblock %}
+        <br><br><br>
+        <h2 class="section-title" id="skills">Skills</h2>
+        <hr>
+        {% block skillcontent %}
+            {% include 'base/skills.html' %}
+        {% endblock %}
+        <br>
+        <br>
+        <br>
+    <h4 class="section-title" id="education">Education</h4>
+        <hr>
+    {% block education_content %}
+
+        {% include 'base/education.html' %}
+    {% endblock %}
+        <br>
+        <br>
+        <br>
+  <h4 class="section-title" id="experience">Experiences</h4>
+    {% block experience_content %}
+        {% include 'base/experience.html' %}
+
+    {% endblock %}
+        <br><br><br>
+  <h4 class="section-title" id="achievement">Achievements</h4>
+    {% block achievement_content %}
+        {% include 'base/achievements.html' %}
+    {% endblock %}
+        <br><br><br>
+</div>
+
+</div>
+
+
+</body>
+</html>

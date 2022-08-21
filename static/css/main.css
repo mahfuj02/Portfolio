@@ -1,31 +1,245 @@
-body{
-	background-color:#F8F8F8!important;
+body {
+    background-color: #F8F8F8 !important;
+    font-family: Montserrat, "Montserrat", sans-serif !important;
+}
+a{
+    text-decoration: none !important;
+}
+.section-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+/*Navbar CSS*/
+
+/*li .nav-link{*/
+/*	color: red !important;*/
+/*}*/
+/*}*/
+
+/*Navbar End*/
+#profile-wrapper {
+    text-align: center;
 }
 
-#profile-wrapper{
-	text-align: center;
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#profile-pic{
-	width:150px;
-	height: 150px;
-	border-radius: 50%;
-	margin-left: auto;
-  	margin-right: auto;
-}
-
-ul{
-	padding: 0;
-    list-style-type: none;
-}
+/*ul {*/
+/*    padding: 0;*/
+/*    list-style-type: none;*/
+/*}*/
 
 
-.social-links ul, li{
-	list-style-type:none;
-	display: inline-block;
+.social-links ul, .social_icon {
+    list-style-type: none !important;
+    display: inline-block !important;
 }
 
-.social{
-	width:20px;
-	height: 20px;
+.social {
+    width: 20px;
+    height: 20px;
 }
+
+/*Skills*/
+.button1 {
+    background-color: white;
+    color: black;
+    width: fit-content;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10%;
+    border: 2px solid #4CAF50; /* Green */
+}
+
+
+.chart span {
+    font-size: 18px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.chart footer {
+    background-color: #373737;
+    height: 5px;
+    width: 80%;
+}
+
+.chart footer div {
+    width: 80%;
+    height: 100%;
+    /*background-color: #08fdd8;*/
+    -webkit-transition: width 1.3s ease-out;
+    -o-transition: width 1.3s ease-out;
+    transition: width 1.3s ease-out;
+}
+
+.crange {
+    background: linear-gradient(45deg, red, #808080, blue);
+
+}
+
+.pythonrange {
+    background: linear-gradient(45deg, #293462, #808080, #59CE8F);;
+}
+
+.djangorange {
+    background: linear-gradient(45deg, #FF8B8B, #808080, #ABC9FF);
+
+}
+
+.bootstraprange {
+    background: linear-gradient(45deg, #59CE8F, #808080, #F24C4C);
+}
+
+/*End Skill*/
+
+/*Education*/
+
+/*.campus-logo-wrapper {*/
+/*    margin: 0;*/
+/*    position: absolute;*/
+/*    -ms-transform: translateY(-50%);*/
+/*    transform: translateY(-50%);*/
+/*}*/
+
+.campus-logo, .common-logo {
+    object-fit: cover;
+    width: 6rem;
+    height: 6rem;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 30%);
+    border-radius: 50%;
+
+}
+
+.logo-card{
+    padding: 2rem 2rem 2rem 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-right: none;
+}
+
+/*.education-details-wrapper{*/
+/*    transform: translateY(-50%);*/
+/*}*/
+.education-details-card{
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-left: none;
+
+}
+
+.education-text-campus {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.education-text-dept {
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+}
+
+.education-text-duration {
+    color: #000;
+    font-size: 16px;
+}
+
+.education-text-address {
+    color: #000;
+    font-size: 16px;
+    line-height: normal;
+}
+
+/*Resopsive*/
+@media screen and (max-width: 800px){
+    .education-details-wrapper{
+        margin-top: 100% !important;
+    }
+}
+
+
+/*End education*/
+
+/*Experience*/
+
+
+.company-role{
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+.company-title{
+    font-weight: 600;
+    line-height: normal;
+}
+.job-years{
+    color: #000000;
+    font-size: 16px;
+    line-height: normal;
+}
+
+/*End experience*/
+
+/*Achievements*/
+/*.achievement-card{*/
+/*    background-color: #fff;*/
+/*    box-shadow: 0 10px 30px -15px rgba(0,0,0,.2);*/
+/*    padding: 1.5rem;*/
+/*    border-radius: 10px;*/
+/*    border: 1px solid hsla(0,0%,82.7%,.397);*/
+/*    transition: all .3s ease;*/
+/*}*/
+.card{
+    display: flex !important;
+}
+.achievement-card{
+    text-align: center;
+}
+
+.achievement-card-img{
+    max-width: 100%;
+    width: 220px;
+    height: auto;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-title{
+    color: #000;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 15px 0 0;
+}
+
+.card-subtitle{
+    color: #666;
+    font-size: 17px;
+    line-height: 1.5rem;
+}
+
+
+/*End achievements*/

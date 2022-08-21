@@ -1,21 +1,8 @@
-{#<h3> Hello World </h3>#}
-{% load static %}
-
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mahfuj</title>
-    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
+    {% load static %}
     <br>
+    {% block contenthomepage %}
 	<div class="container">
-		<div class="row">
+		<div class="row mb-5">
 			<div class="col-md-3">
 				<div class="card card-body h-100  border-info" id="profile-wrapper ">
                     <img id="profile-pic" src="{% static '/images/profile1.heic' %}">
@@ -35,12 +22,12 @@
 
 					<p>From this you’ll see that I’m someone that jumps before I can talk myself out of doing something scary.</p>
 
-					<ul class="social-links">
-						<li><img class="social" src="{% static 'images/facebook.png' %}"></li>
-						<li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
-						<li><img class="social" src="{% static 'images/twitter.png' %}"></li>
-						<li><img class="social" src="{% static 'images/youtube.png' %}"></li>
-					</ul>
+                    <ul class="social-links">
+                        <li class="social_icon"><a href="https://www.facebook.com/mahfujahmed02" target="_blank"><img class="social" src="{% static 'images/facebook.png' %}"></a></li>
+                        <li class="social_icon"><a href="https://www.linkedin.com/in/mahfuj02/" target="_blank"><img class="social" src="{% static 'images/linkedin.png' %}"></a></li>
+                        <li class="social_icon"><a href="https://www.twitter.com/mahfuj_02/" target="_blank"><img class="social" src="{% static 'images/twitter.png' %}"></a></li>
+                        <li class="social_icon"><a href="https://www.youtube.com" target="_blank"><img class="social" src="{% static 'images/youtube.png' %}"></a></li>
+                    </ul>
 
 				</div>
 			</div>
@@ -66,29 +53,5 @@
 			</div>
 		</div>
 		<br>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h5>How I Learn</h5>
-					<hr>
-					<p>Reverse Engineer & Build Ugly Prototypes First.</p>
-
-					<p>I can learn just about anything by having a final product to tear apart piece by piece. I break the code where I need to figure out why things work the way they do. Documentation is just a reference.</p>
-				</div>
-			</div>
-
-			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h5>My Short Term Goals</h5>
-				<hr>
-				<p>After almost two years of supporting my system at the lab I’m ready to learn something new. I'll collaborating and sharing my experience with others on my blog (SayHelloWorld.co) & youtube channel.</p>
-				<p>Aside from building small projects I would love to enter a position where I can be part of a bigger team & learn from others with more experience than myself.</p>
-
-				</div>
-			</div>
-		</div>
-		<br>
 	</div>
-
-</body>
-</html>
+    {% endblock %}
